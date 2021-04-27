@@ -1,10 +1,19 @@
-# Build Local-doxygen
+# Doxygen
 
-## How do I install these formulae?
+## First add this tap
+`brew tap mongodb-ansible-roles/homebrew-doxygen`
 
-`brew install build/local-doxygen/<formula>`
+## Then install formula
+`brew install doxygen@1.8.13`
 
-Or `brew tap build/local-doxygen` and then `brew install <formula>`.
+## Make sure symlink is correct
+`brew link --overwrite doxygen@1.8.13`
+
+## Check version
+`doxygen --version`
+```
+1.8.13
+```
 
 ## Documentation
 
